@@ -1,4 +1,4 @@
-# freenom-py
+# freenom-py   by   https://github.com/shuai93
 
 ## 项目描述 🔑
 

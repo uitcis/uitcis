@@ -1,5 +1,5 @@
 # freenom-py   by   https://github.com/shuai93
-
+0
 ## 项目描述 🔑
 
 一个 Freenom 自动续期域名的脚本

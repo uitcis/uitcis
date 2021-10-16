@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+            <title>空想幻灵</title>
+            
+            <base href="./" target="_blank">
+            
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+            
+            <!--歌单播放器代码-->
+            <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+            <!--END-->
+            
+            <!--样式框架-->
+            <link rel="stylesheet" href="https://cdn.staticfile.org/bulma/0.9.3/css/bulma.min.css">
+            <!--END-->
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                  var hm = document.createElement("script");
+                  hm.src = "https://hm.baidu.com/hm.js?de5b6612e5374f829032bdfb0eaf03e0";
+                  var s = document.getElementsByTagName("script")[0]; 
+                  s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+
+</head>
+
+<body>
+ <section class="section">
+    <div class="container">
+		    <!--头像-->
+			<div class="logo" style="text-align:center">
+				
+				<img src="./favicon.ico" class="logo">
+			</div>
+			<!--END-->
+			
+			<!--单曲-->
+            <div class="column">
+                <meting-js server="netease" type="song" id="440239194"></meting-js>
+            </div>
+            <!--END-->
+            
+            <!--导航菜单-->
+			<div class="column" style="text-align:center">
+			    
+			<!--示例说明	
+			    <div class="column">	<a class="button " href="引号里填链接">这里填链接名字</a></div>
+			  -->
+
+				<div class="column">	<a class="button" href="https://space.bilibili.com/43768997">B站</a></div>
+			
+				<div class="column">	<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=fQgUCR4UDj0bEgUQHBQRUx4SEA" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png"/></a></div>
+                <div class="column">	<a class="button" href="/icon">favicon制作</a></div>
+                <div class="column">	<a class="button" href="https://www.uitcis.com">博客</a></div>
+			</div>
+	        <!--导航END-->
+	        
+            <!--歌单播放-->
+            <div class="column">
+	        <meting-js  server="tencent" type="playlist" id="2932605896"></meting-js>
+            </div>
+	        <!--END-->
+             
+	       
+	</div>
+
+  </section>
+</body>
+
+</html>

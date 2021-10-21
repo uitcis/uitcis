@@ -85,10 +85,7 @@
 	</div>
 
   </section>
-  
-</body>
-<footer>
-<script type="text/ractive" id="listTpl">
+  <script type="text/ractive" id="listTpl">
     <ul class="postlist">
         {{#posts}}
         <li class="postlist"><a href="#post/{{number}}">{{title}}</a>
@@ -110,6 +107,9 @@
      <div class="content">{{{markdown2HTML(body)}}}</div>
     {{/post}}
 </script>
+</body>
+<footer>
+
 </footer>
 <style>
    .button{

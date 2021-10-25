@@ -13,32 +13,42 @@
 </head>
 
 <body>
-
-			<div class="card" >
-				<div class="link">	<a class="button" href="https://space.bilibili.com/43768997"><img src="图片地址"  ><p class=title>B站</p></a></div>
-				<div class="link">	<a class="button" href="https://cloud.uitcis.com"><img src="图片地址"  ><img src="图片地址"  ><img src="图片地址"  ><img src="图片地址"  >onedrive列表</br>BLT 万物有灵下载</a></div>
-		        <div class="link">	<a class="button" href="https://sky.uitcis.com"><img src="图片地址"  ><img src="图片地址"  ><img src="图片地址"  >图床</a></div>
-				<div class="link">	<a class="button" href="https://uitcis.com"><img src="图片地址"  ><img src="图片地址"  >博客</br>BLT说明Blender笔记</a></div>
-		        <div class="link">	<a class="button" href="https://blt.qa.pjcgart.com"><img src="图片地址"  >BLT论坛</a></div>
-			</div>
-			<!--导航END-->
 			<!--歌单播放-->
 			<div class="music">
-			<meting-js  server="tencent" type="playlist" id="2932605896"></meting-js>
+				<meting-js  server="tencent" type="playlist" id="2932605896"></meting-js>
+				</div>
+				<!--END-->
+			<div class="card" >
+				<div class="link">	<a class="button" href="https://space.bilibili.com/43768997"><img class=linkimg src="https://gitee.com/BLTORG/BLT/raw/master/image/avatar_11.png"  ><p class=title>B站</p></a></div>
+				<div class="link">	<a class="button" href="https://cloud.uitcis.com"><img class=linkimg src="https://gitee.com/BLTORG/BLT/raw/master/image/avatar_10.png"  >onedrive列表</br>BLT 万物有灵下载</a></div>
+				<div class="link">	<a class="button" href="https://uitcis.com"><img class=linkimg src="https://gitee.com/BLTORG/BLT/raw/master/image/avatar_8.png"  >空想幻灵日志</a></div>
+		        <div class="link">	<a class="button" href="https://blt.qa.pjcgart.com"><img class=linkimg src="https://raw.pjcgart.com/blt_web_station/icon/show_logo.png"  >BLT论坛</a></div>
 			</div>
-			<!--END-->
+			<!--导航END-->
+
 </body>
 <footer>
 
 </footer>
 <style>
+	.card{
+		display: grid;
+		flex-wrap: wrap;
+		
+		grid-auto-flow: column;
+	}
    .button{
 	   height:auto
 	  }
     .link
-    {height:50px;
-     width:auto
+	
+    {
+    display: block;
+	height:auto;
+     width:16rem
 		}
-
+    .linkimg
+	{height: 16rem;
+	width:16rem;}
 	</style>
 </html>

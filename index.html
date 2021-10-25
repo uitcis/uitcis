@@ -13,44 +13,68 @@
 </head>
 
 <body>
+	<div class=main>
 			<!--歌单播放-->
 			<div class="music">
-				<meting-js  server="tencent" type="playlist" id="2932605896"></meting-js>
-				</div>
-				<!--END-->
+				<meting-js  server="tencent" type="playlist" id="2932605896" list-Folded="true"></meting-js>
+			</div>
+			<!--END-->
 			<div class="card" >
 				<div class="link">	<a class="button" href="https://space.bilibili.com/43768997"><img class=linkimg src="https://gitee.com/BLTORG/BLT/raw/master/image/avatar_11.png"  ><p class=title>B站</p></a></div>
-				<div class="link">	<a class="button" href="https://cloud.uitcis.com"><img class=linkimg src="https://gitee.com/BLTORG/BLT/raw/master/image/avatar_10.png"  >onedrive列表</br>BLT 万物有灵下载</a></div>
-				<div class="link">	<a class="button" href="https://uitcis.com"><img class=linkimg src="https://gitee.com/BLTORG/BLT/raw/master/image/avatar_8.png"  >空想幻灵日志</a></div>
-		        <div class="link">	<a class="button" href="https://blt.qa.pjcgart.com"><img class=linkimg src="https://raw.pjcgart.com/blt_web_station/icon/show_logo.png"  >BLT论坛</a></div>
-				<div class="link">	<a class="button" href="https://www.blendermagic.cn"><img class=linkimg src="https://www.blendermagic.cn/favicon.ico"  >辣椒酱的斑斓魔法</a></div>
+				<div class="link">	<a class="button" href="https://cloud.uitcis.com"><img class=linkimg src="https://gitee.com/BLTORG/BLT/raw/master/image/avatar_10.png"  ><p class=title>BLT&万物有灵下载</p></a></div>
+				<div class="link">	<a class="button" href="https://uitcis.com"><img class=linkimg src="https://gitee.com/BLTORG/BLT/raw/master/image/avatar_8.png"  ><p class=title>空想幻灵日志</p></a></div>
+		        <div class="link">	<a class="button" href="https://blt.qa.pjcgart.com"><img class=linkimg src="https://raw.pjcgart.com/blt_web_station/icon/show_logo.png"  ><p class=title>BLT论坛</p></a></div>
+				<div class="link">	<a class="button" href="https://www.blendermagic.cn"><img class=linkimg src="https://www.blendermagic.cn/favicon.ico"  ><p class=title>辣椒酱的斑斓魔法</p></p></a></div>
 			</div>
 			<!--导航END-->
+			<div class=tips>
+			<p>如果遇到BLT打不开等问题进群请回答</p>
+			<p>1.用户名是中文吗配上你的C盘用户下的截图图片</p>
+			<p>2.有没有开加速器或者翻墙</p>
+			<p>3.是否将BLT或者Blender存放在中文路径</p>
+			<p>4.如果是全局翻译无法使用请回答：Blender的config文件夹在C盘还是在Blender程序根目录</p>
+			</div>
+	</div>
 
 </body>
-<footer>
 
-</footer>
 <style>
+	.main{
+		width: 90%;
+		margin: 0 auto;
+	}
 	.card{
 		display: grid;
 		
 		
-		grid-template-columns: repeat(auto-fill, 16rem);
+		grid-template-columns: repeat(auto-fill, 20%);
 		justify-content: space-between;
 	}
    .button{
-	   height:auto
+	   height:auto;
+	   color: black;
+	   text-align: center;
 	  }
     .link
 	
     {
     display: block;
 	height:auto;
-     width:16rem
-		}
+     width:100%
+	}
+    
     .linkimg
-	{height: 16rem;
-	width:16rem;}
+	{height: auto;
+	width:100%;}
+	.title
+	{
+     font-weight:bold;
+	}
+	.tips
+	{background-color:rgb(170, 226, 170);
+	color:rgb(0, 0, 0);
+	font-size: large;
+	padding: 1rem 2rem;
+}
 	</style>
 </html>

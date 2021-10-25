@@ -1,82 +1,32 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
 			<title>空想幻灵</title>
-			
 			<base href="./" target="_blank">
-			
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
-	        
-	        
 			<!--歌单播放器代码-->
 			<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
 			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
 			<!--END-->
-			
-			<!--样式框架-->
-			<link rel="stylesheet" href="https://cdn.staticfile.org/bulma/0.9.3/css/bulma.min.css">
-			<!--END-->
-			<!--百度-->
-			<script>
-				var _hmt = _hmt || [];
-				(function() {
-				  var hm = document.createElement("script");
-				  hm.src = "https://hm.baidu.com/hm.js?de5b6612e5374f829032bdfb0eaf03e0";
-				  var s = document.getElementsByTagName("script")[0]; 
-				  s.parentNode.insertBefore(hm, s);
-				})();
-			</script>
-            <!--END-->
 </head>
 
 <body>
- <section class="section">
-	<div class="container">
-	 
-			<!--头像-->
-			<div class="logo" style="text-align:center">
-				
-				<img src="./favicon.ico" class="logo">
-			</div>
-			<!--END-->
-			
-			<!--单曲-->
 
-			<div class="column">
-				<meting-js server="netease" type="song" id="440239194"></meting-js>
-			</div>
-			<!--END-->
-			
-		<div class=level>
-            <!--导航菜单-->
-
-			<div class="column" style="text-align:center">
-				<div class="column">	<a class="button" href="https://space.bilibili.com/43768997"><p class=title>B站</p></a></div>
-				<div class="column">	<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=fQgUCR4UDj0bEgUQHBQRUx4SEA" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png"/></a></div>
-				<div class="column">	<a class="button" href="https://cloud.uitcis.com">onedrive列表</br>BLT 万物有灵下载</a></div>
-		        <div class="column">	<a class="button" href="https://sky.uitcis.com">图床</a></div>
-				<div class="column">	<a class="button" href="https://uitcis.com">博客</br>BLT说明Blender笔记</a></div>
-		        <div class="column">	<a class="button" href="https://blt.qa.pjcgart.com">BLT论坛</a></div>
+			<div class="card" >
+				<div class="link">	<a class="button" href="https://space.bilibili.com/43768997"><img src="图片地址"  ><p class=title>B站</p></a></div>
+				<div class="link">	<a class="button" href="https://cloud.uitcis.com"><img src="图片地址"  ><img src="图片地址"  ><img src="图片地址"  ><img src="图片地址"  >onedrive列表</br>BLT 万物有灵下载</a></div>
+		        <div class="link">	<a class="button" href="https://sky.uitcis.com"><img src="图片地址"  ><img src="图片地址"  ><img src="图片地址"  >图床</a></div>
+				<div class="link">	<a class="button" href="https://uitcis.com"><img src="图片地址"  ><img src="图片地址"  >博客</br>BLT说明Blender笔记</a></div>
+		        <div class="link">	<a class="button" href="https://blt.qa.pjcgart.com"><img src="图片地址"  >BLT论坛</a></div>
 			</div>
 			<!--导航END-->
-
-            
-			
-			
 			<!--歌单播放-->
-			<div class="column">
+			<div class="music">
 			<meting-js  server="tencent" type="playlist" id="2932605896"></meting-js>
 			</div>
 			<!--END-->
-
-	    </div> 
-	</div>
-
-  </section>
-  
 </body>
 <footer>
 
@@ -85,5 +35,10 @@
    .button{
 	   height:auto
 	  }
-</style>
+    .link
+    {height:50px;
+     width:auto
+		}
+
+	</style>
 </html>
